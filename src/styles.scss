@@ -49,6 +49,11 @@ html {
 
 body {
     min-height: 100vh;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
 
 img, picture, svg, video {
