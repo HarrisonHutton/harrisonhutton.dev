@@ -97,6 +97,15 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://harrisonhutton.github.io/harrisonhutton.dev/",
+            "dir": "docs",
+            "branch": "main",
+            "message": "Deploy to GitHub Pages"
+          }
         }
       }
     }
