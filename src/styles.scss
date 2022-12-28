@@ -91,3 +91,36 @@ h3 {
         --fs-body: 1.125rem;
     }
 }
+
+/* Typography */
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-normal);
+
+    strong {
+        display: block;
+    }
+}
+
+.section__title--work {
+    font-weight: var(--fw-bold);
+}
+
+.section__subtitle {
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+
+.section__subtitle--work {
+    margin-bottom: 1em;
+}
