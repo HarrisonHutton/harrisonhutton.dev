@@ -1,1 +1,18 @@
-<p>header works!</p>
+<header class="header">
+    <div class="logo">
+        <img src="../../assets/smile.png" alt="logo">
+    </div>
+
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item" *ngFor="let section of sections">
+                <a [href]="'#' + section.id" class="nav__link">{{section.name}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>

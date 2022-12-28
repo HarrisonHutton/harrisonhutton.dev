@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Section } from './@interfaces/section';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'harrisonhutton';
+  
+  sections: Section[] = [
+    {
+      name: 'Home',
+      id: 'home'
+    },
+    {
+      name: 'About Me',
+      id: 'about-me'
+    },
+    {
+      name: 'My Work',
+      id: 'my-work'
+    },
+    {
+      name: 'Contact',
+      id: 'contact'
+    }
+  ]
+
 }
