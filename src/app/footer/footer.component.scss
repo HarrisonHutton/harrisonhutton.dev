@@ -1,9 +1,9 @@
 .footer {
     background: #111;
     color: var(--clr-accent);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-align: center;
-    padding: 2.5em 0 4.5em;
+    padding: 1em 0 1.5em;
 
     a {
         color: inherit;
@@ -28,7 +28,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: .5em 0 0;
     padding: 0;
 }
 
