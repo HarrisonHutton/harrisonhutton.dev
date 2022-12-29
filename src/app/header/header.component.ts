@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { Section } from '../@interfaces/section';
 
 @Component({
@@ -9,5 +9,17 @@ import { Section } from '../@interfaces/section';
 export class HeaderComponent {
 
   @Input() sections: Section[] = [];
+
+  // @HostListener('click', ['$event.target'])
+  // onClick(target: HTMLElement) {
+  //   if (target.classList.contains('nav__link')) {
+  //     this.removeNav();
+  //   }
+  // }
+
+  toggleNav() {
+    let appRoot = document.getElementsByTagName('app-root')[0];
+    appRoot.classList.toggle('nav-open');
+  }
 
 }
