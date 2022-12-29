@@ -129,7 +129,8 @@ h3 {
  *
  * These styles needed to be placed here because of the dependence on the app-root component. */
 .nav-open .nav {
-    transform: translateX(0) !important;
+    transform: 
+        translateX(0) !important;
 }
 
 .nav-open .nav-toggle {
@@ -137,11 +138,17 @@ h3 {
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn) !important;
+    transform: 
+        // translateY(6px)
+        rotate(.625turn) 
+        !important;
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px) !important;
+    transform: 
+        rotate(90deg) 
+        translateX(-8px) 
+        !important;
 }
 
 .nav-open .hamburger::after {

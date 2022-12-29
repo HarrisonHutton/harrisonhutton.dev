@@ -1,11 +1,13 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1em;
+    padding-top: .8em;
 }
 
 .logo {
-    max-width: 75px;
+    max-width: 50px;
 }
 
 .nav {
@@ -50,8 +52,8 @@
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 1.5em;
+    top: 1.6em;
     z-index: 1000;
 }
 
@@ -67,7 +69,8 @@
     width: 2em;
     height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    transition: 
+        transform 250ms ease-in-out;
 }
 
 .hamburger::before,
@@ -78,5 +81,10 @@
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 8px; }
+.hamburger::after { bottom: 8px; }
+
+.hamburger::after {
+    transition:
+        opacity 250ms ease-in-out
+}
