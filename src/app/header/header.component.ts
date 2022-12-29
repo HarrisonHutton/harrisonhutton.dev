@@ -8,18 +8,23 @@ import { Section } from '../@interfaces/section';
 })
 export class HeaderComponent {
 
+  appRoot = document.getElementsByTagName('app-root')[0];
+
   @Input() sections: Section[] = [];
 
-  // @HostListener('click', ['$event.target'])
-  // onClick(target: HTMLElement) {
-  //   if (target.classList.contains('nav__link')) {
-  //     this.removeNav();
-  //   }
-  // }
+  @HostListener('click', ['$event.target'])
+  onClick(target: HTMLElement) {
+    if (target.classList.contains('nav__link')) {
+      this.removeNav();
+    }
+  }
 
   toggleNav() {
-    let appRoot = document.getElementsByTagName('app-root')[0];
-    appRoot.classList.toggle('nav-open');
+    this.appRoot.classList.toggle('nav-open');
+  }
+
+  removeNav() {
+    this.appRoot.classList.remove('nav-open');
   }
 
 }
