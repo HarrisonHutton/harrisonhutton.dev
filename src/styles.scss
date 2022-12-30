@@ -124,33 +124,3 @@ h3 {
 .section__subtitle--work {
     margin-bottom: 1em;
 }
-
-/* Navbar toggle styles 
- *
- * These styles needed to be placed here because of the dependence on the app-root component. */
-.nav-open .nav {
-    transform: 
-        translateX(0) !important;
-}
-
-.nav-open .nav-toggle {
-    position: fixed !important;
-}
-
-.nav-open .hamburger {
-    transform: 
-        // translateY(6px)
-        rotate(.625turn) 
-        !important;
-}
-
-.nav-open .hamburger::before {
-    transform: 
-        rotate(90deg) 
-        translateX(-8px) 
-        !important;
-}
-
-.nav-open .hamburger::after {
-    opacity: 0 !important;
-}
