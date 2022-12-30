@@ -11,7 +11,7 @@ export class AppComponent {
   sections: Section[] = [
     {
       name: 'Home',
-      id: 'home'
+      id: ''
     },
     {
       name: 'About Me',
