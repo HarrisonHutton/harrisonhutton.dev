@@ -12,12 +12,17 @@ export class HeaderComponent {
 
   private previousScrollY = 0;
 
+  private isAutoScrolling = false;
+
   constructor(private renderer: Renderer2) {}
 
   /* Make header disappear on scroll down and reappear on scroll up. */
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: UIEvent) {
     const currentScrollY = window.scrollY;
+
+    /* If auto-scrolling, leave header visible. */
+    if (this.isAutoScrolling) return;
 
     /* Prevent the header from disappearing on mobile devices when the user
      * scrolls to the top of the page. */
@@ -33,6 +38,16 @@ export class HeaderComponent {
     }
 
     this.previousScrollY = currentScrollY;
+  }
+
+  /* Keep header visible when auto-scrolling on navbar button click. */
+  isScrolling() {
+    this.isAutoScrolling = true;
+
+    setTimeout(() => {
+      this.isAutoScrolling = false;
+    }
+    , 1000);
   }
 
 }
