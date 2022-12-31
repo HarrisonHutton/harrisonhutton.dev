@@ -8,7 +8,7 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item" *ngFor="let section of sections">
-                <a [href]="'#' + section.id" class="nav__link">{{section.name}}</a>
+                <a [href]="'#' + section.id" (click)="isScrolling()" class="nav__link">{{section.name}}</a>
             </li>
         </ul>
     </nav>
