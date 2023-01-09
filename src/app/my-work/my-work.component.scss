@@ -4,34 +4,63 @@
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2em;
+    text-align: left;
 }
 
 .portfolio__item {
-    background: var(--clr-dark);
-    overflow: hidden;
+    
 }
 
-.portfolio__item {
-    background: var(--clr-dark);
-    overflow: hidden;
+@media (min-width: 600px) {
+    .portfolio__item {
+
+    }
 }
 
-.portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+.portfolio__item--title {
+    font-size: calc(var(--fs-h2) * .7);
+    font-weight: var(--fw-bold);
+    margin-bottom: .5em;
 }
 
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
+.portfolio__item--description {
+    margin-bottom: 2em;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .75;
+.portfolio__item--img {
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2em;
+    border-radius: 4px;
+}
+
+// .portfolio__item {
+//     background: var(--clr-dark);
+//     overflow: hidden;
+// }
+
+// .portfolio__item {
+//     background: var(--clr-dark);
+//     overflow: hidden;
+// }
+
+// .portfolio__img {
+//     transition: 
+//         transform 750ms cubic-bezier(.5, 0, .5, 1),
+//         opacity 250ms linear;
+// }
+
+// .portfolio__item:focus {
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .portfolio__img:hover,
+// .portfolio__item:focus .portfolio__img {
+//     transform: scale(1.2);
+//     opacity: .75;
+// }
+
+#mtb-logo-img {
+    padding: 0 1em;
+    background: white;
 }
