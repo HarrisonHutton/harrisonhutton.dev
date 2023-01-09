@@ -16,7 +16,7 @@
     /* Font weights */
     --fw-light: 300;
     --fw-normal: 400;
-    --fw-bold: 900;
+    --fw-bold: 700;
 
     /* Color scheme */
     --clr-light: #fff;
@@ -106,7 +106,9 @@ h3 {
 }
 
 .section__title--work {
+    font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
+    margin-bottom: 1em;
 }
 
 .section__subtitle {
