@@ -1,18 +1,28 @@
 .my-work {
     background-color: var(--clr-accent);
     text-align: center;
+    
+    @media (min-width: 990px) {
+        padding: 5em 6em;
+    }
 }
 
 .portfolio {
     text-align: left;
-}
-
-.portfolio__item {
+    margin: 0 auto;
+    max-width: 1300px;
     
-}
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4em;
+        
+        @media (min-width: 990px) {
+            gap: 1em;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+        }
 
-@media (min-width: 600px) {
-    .portfolio__item {
 
     }
 }
@@ -32,33 +42,6 @@
     margin-bottom: 2em;
     border-radius: 4px;
 }
-
-// .portfolio__item {
-//     background: var(--clr-dark);
-//     overflow: hidden;
-// }
-
-// .portfolio__item {
-//     background: var(--clr-dark);
-//     overflow: hidden;
-// }
-
-// .portfolio__img {
-//     transition: 
-//         transform 750ms cubic-bezier(.5, 0, .5, 1),
-//         opacity 250ms linear;
-// }
-
-// .portfolio__item:focus {
-//     position: relative;
-//     z-index: 2;
-// }
-
-// .portfolio__img:hover,
-// .portfolio__item:focus .portfolio__img {
-//     transform: scale(1.2);
-//     opacity: .75;
-// }
 
 #mtb-logo-img {
     padding: 0 1em;
