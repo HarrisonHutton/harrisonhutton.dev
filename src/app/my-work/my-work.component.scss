@@ -16,14 +16,16 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 4em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
         
         @media (min-width: 990px) {
-            gap: 1em;
+            gap: 2em;
             display: grid;
             grid-template-columns: 2fr 3fr;
         }
-
-
     }
 }
 
