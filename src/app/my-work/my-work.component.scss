@@ -16,6 +16,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 4em;
+        padding: 1em;
+        border-radius: 12px;
+        background: var(--clr-dark);
+        box-shadow: var(--box-shadow);
 
         &:last-child {
             margin-bottom: 0;
@@ -42,7 +46,7 @@
 .portfolio__item--img {
     box-shadow: var(--box-shadow);
     margin-bottom: 2em;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 #mtb-logo-img {
