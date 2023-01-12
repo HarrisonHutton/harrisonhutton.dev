@@ -24,6 +24,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        &--subtitle {
+            margin-bottom: 1em;
+        }
         
         @media (min-width: 990px) {
             gap: 2em;
@@ -37,6 +41,10 @@
     font-size: calc(var(--fs-h2) * .7);
     font-weight: var(--fw-bold);
     margin-bottom: .5em;
+
+    a {
+        color: var(--clr-light);
+    }
 }
 
 .portfolio__item--description {
