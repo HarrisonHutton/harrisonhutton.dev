@@ -1,26 +1,71 @@
+// Define variables
+$primary-color: #000;
+$secondary-color: var(--clr-accent);
+$secondary-color-dark: var(--clr-accent-dark);
+$navbar-height: 70px;
+$font-size-name: 4rem;
+$font-size-title: 6rem;
+//$font-size-subtitle: 2rem;
+
+// Define media query breakpoints
+$breakpoint-sm: 600px;
+
 .intro {
-    position: relative;
-}
+  height: calc(100vh);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: $primary-color;
 
-.intro__img {
-    filter: var(--drop-shadow);
-}
+  &__img {
+    width: 50%;
+    max-width: 300px;
+    z-index: 2;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section__title {
+      font-size: clamp(1rem, 2.5rem, 4rem) !important;
+      font-weight: bold;
+      margin: 0;
+      letter-spacing: 0.1rem;
+      // text-transform: uppercase;
+      color: var(--clr-light);
 
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
+      .name {
+        font-size: clamp(4rem, 14vw, 14rem) !important;
+        font-weight: bold;
+        color: transparent;
+        background-image: linear-gradient(to right, $secondary-color, $secondary-color-dark);
+        background-clip: text;
+        margin: 0;
+        letter-spacing: 0.1rem;
+        filter: var(--drop-shadow);
+        // text-transform: uppercase;
+        div {
+          display: block;
+        }
+        div:first-of-type {
+          font-size: 2rem;
+          font-weight: normal;
+          margin-bottom: 1rem;
+        }
+      }
+  }
+
+  @media (min-width: 800px) {
+    height: calc(100vh - $navbar-height);
+
+    .name {
+      font-size: 10rem;
     }
-
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
+    .section__title {
+      font-size: 8rem;
     }
+  }
 }
