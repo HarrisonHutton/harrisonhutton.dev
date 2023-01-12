@@ -46,7 +46,9 @@ $breakpoint-sm: 600px;
         margin: 0;
         letter-spacing: 0.1rem;
         filter: var(--drop-shadow);
-        // text-transform: uppercase;
+
+        animation: rotatecolor 10s linear infinite;
+        
         div {
           display: block;
         }
@@ -68,4 +70,14 @@ $breakpoint-sm: 600px;
       font-size: 8rem;
     }
   }
+}
+
+
+@keyframes rotatecolor {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
 }
