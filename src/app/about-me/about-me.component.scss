@@ -1,5 +1,12 @@
 .about-me {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 1024px) {
+        padding: 5em 6em;
+    }
 
     &__img {
         display: flex;
@@ -10,6 +17,7 @@
 
     &__body {
         text-align: left;
+        max-width: 1300px;
 
         &-bio {
             margin-bottom: 3em;
