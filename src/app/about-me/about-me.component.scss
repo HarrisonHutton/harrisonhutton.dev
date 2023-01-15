@@ -7,6 +7,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    &__body {
+        text-align: left;
+
+        &-bio {
+            margin-bottom: 3em;
+        }
+    }
 }
 
 @media (min-width: 990px) {
@@ -14,6 +22,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2em;
+
+        &-bio {
+            margin-bottom: 0;
+        }
     }
 }
 
