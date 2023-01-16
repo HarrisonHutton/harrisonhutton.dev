@@ -12,12 +12,18 @@
                 Who I am
             </h2>
             <p>
-                Nisi tempor cupidatat labore ut minim. Enim eu veniam nulla magna consectetur enim excepteur do nisi et dolore tempor dolor. Magna eu ullamco dolore reprehenderit quis amet et magna excepteur voluptate eiusmod sint culpa. Consequat laboris nostrud exercitation nostrud sint Lorem consectetur consequat tempor exercitation irure elit.
+                I am a programmer and musician, blending my artistic background with my technical skills to bring a unique perspective to frontend development. My passion for music not only provides an outlet for creativity, but also instills a keen sense for aesthetics and design in my approach to technology. I am always looking for ways to make my work not only functional but also visually appealing. Whether I'm coding or playing guitar, I am driven to create beautiful and polished work.
             </p>
-    
-            <p>
-                Elit nostrud ad ut voluptate esse culpa. In est sint id reprehenderit amet laboris mollit esse cupidatat nisi est culpa magna. Ipsum dolor ea pariatur minim fugiat laboris voluptate tempor in reprehenderit dolor ea incididunt. Anim ut fugiat sit adipisicing irure anim cillum ex exercitation sint excepteur. Incididunt ea pariatur nulla ipsum nisi. Exercitation quis ex nostrud sint labore dolore sint irure amet fugiat tempor labore adipisicing. Magna non reprehenderit ut aliqua Lorem eiusmod amet id qui.
-            </p>
+
+            <div>
+                <button>
+                    My Resume
+                </button>
+
+                <button (click)="openAudioPlayer()">
+                    Music Sample
+                </button>
+            </div>
         </div>
 
         <!-- <div class="about-me__img">
@@ -69,5 +75,14 @@
     
         </div>
     </div>
+</section>
 
+<section *ngIf="showAudioPlayer" class="modal-background" (click)="this.closeAudioPlayer()">
+    <app-audio-player
+            [audioSrc]="this.prismAudioSrc"
+            [albumArtSrc]="this.prismAlbumArtSrc"
+            [albumArtAlt]="this.prismAlbumArtAlt"
+            [musicTitle]="this.prismTitle"
+            [artistName]="this.prismArtistName">
+    </app-audio-player>
 </section>
