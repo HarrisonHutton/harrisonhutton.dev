@@ -22,6 +22,7 @@ export class AboutMeComponent {
   }
 
   closeAudioPlayer() {
+    console.log('closeAudioPlayer() called');
     this.showAudioPlayer = false;
   }
 

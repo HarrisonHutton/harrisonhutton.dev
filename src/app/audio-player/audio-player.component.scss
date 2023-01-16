@@ -7,7 +7,7 @@
     &__container {
         background: var(--clr-light);
         color: var(--clr-dark);
-        padding: 2em;
+        padding: clamp(1em, 1.7em, 2em);
         border-radius: 12px;
     }
 }
@@ -16,7 +16,6 @@
     &__img {
         height: clamp(300px, 50vw, 500px);
         width: auto;
-
     }
 
     &__title {
