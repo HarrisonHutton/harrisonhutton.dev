@@ -77,7 +77,7 @@
     </div>
 </section>
 
-<section *ngIf="showAudioPlayer" class="modal-background" (click)="this.closeAudioPlayer()">
+<section *ngIf="showAudioPlayer">
     <app-audio-player
             [audioSrc]="this.prismAudioSrc"
             [albumArtSrc]="this.prismAlbumArtSrc"
