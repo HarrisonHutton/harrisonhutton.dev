@@ -1,0 +1,22 @@
+<div class="music-player">
+    <div class="music-player__container">
+        <img class="music__img" [src]="this.albumArtSrc" [alt]="this.albumArtAlt">
+
+        <div class="music__title">
+            <h2 class="song-name">
+                {{ this.musicTitle }}
+            </h2>
+
+            <h3 class="artist-name">
+                {{ this.artistName }}
+            </h3>
+        </div>
+
+        <div class="music__player">
+            <audio controls class="music__controls">
+                <source [src]="this.audioSrc" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</div>

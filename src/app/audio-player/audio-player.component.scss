@@ -1,0 +1,45 @@
+.music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    &__container {
+        background: var(--clr-light);
+        color: var(--clr-dark);
+        padding: 2em;
+        border-radius: 12px;
+    }
+}
+
+.music {
+    &__img {
+        height: clamp(300px, 50vw, 500px);
+        width: auto;
+
+    }
+
+    &__title {
+        // text-align: center;
+        margin: .25em 0;
+    }
+
+    &__player {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__controls {
+        width: 100%;
+    }
+}
+
+.song-name {
+    font-size: calc(var(--fs-h2) * .75);
+}
+
+.artist-name {
+    font-size: var(--fs-h3);
+    // color: var(--clr-light-variant);
+}
