@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AudioPlayerService } from '../@services/audio-player.service';
 
 @Component({
   selector: 'app-about-me',
@@ -15,15 +16,17 @@ export class AboutMeComponent {
 
   showAudioPlayer: boolean = false;
 
-  constructor() { }
+  constructor(private audioPlayer: AudioPlayerService) { }
+
+  ngOnInit() {
+    this.audioPlayer.showModal$.subscribe(showModal => {
+      this.showAudioPlayer = showModal;
+    });
+  }
 
   openAudioPlayer() {
-    this.showAudioPlayer = true;
+    this.audioPlayer.updateShowModal(true);
   }
-
-  closeAudioPlayer() {
-    console.log('closeAudioPlayer() called');
-    this.showAudioPlayer = false;
-  }
+  /* closeAudioPlayer() defined in audio-player.component.ts */
 
 }

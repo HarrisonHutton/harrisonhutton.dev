@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AudioPlayerService } from '../@services/audio-player.service';
 
 @Component({
   selector: 'app-audio-player',
@@ -17,8 +18,13 @@ export class AudioPlayerComponent {
   @Input() musicTitle: string = '';
   @Input() artistName: string = '';
 
-  constructor() {
+  constructor( private audioPlayer: AudioPlayerService ) {
     this.audio = new Audio();
+  }
+
+  /* This is used to prevent any clicks on the music player from closing the modal */
+  stopPropagation(event: Event) {
+    event.stopPropagation();
   }
 
   playAudio(audioSrc: string) {
@@ -29,6 +35,10 @@ export class AudioPlayerComponent {
 
   pauseAudio() {
     this.audio.pause();
+  }
+
+  closeAudioPlayer() {
+    this.audioPlayer.updateShowModal(false);
   }
 
 }
