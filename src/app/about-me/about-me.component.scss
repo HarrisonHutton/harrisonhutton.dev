@@ -89,3 +89,14 @@
 .wave2 {
     background-image: url('../../assets/waves/wave2-cropped.svg');
 }
+
+.hidden {
+    opacity: 0;
+    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateY(2rem);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
