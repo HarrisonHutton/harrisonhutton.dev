@@ -22,6 +22,7 @@
     --clr-light: #fff;
     --clr-light-variant: #afafaf;
     --clr-dark: #303030;
+    --clr-dark-variant: #474747;
     --clr-accent: #16e0bd;
     --clr-accent-light: #8cf6e4;
     --clr-accent-dark: #7dec8e;
@@ -120,4 +121,13 @@ h3 {
 
 .section__subtitle--work {
     margin-bottom: 1em;
+}
+
+/* For SVG Waves */
+.spacer {
+    aspect-ratio: 960/50;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

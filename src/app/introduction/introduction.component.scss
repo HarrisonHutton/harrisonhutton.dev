@@ -1,5 +1,5 @@
 // Define variables
-$primary-color: #000;
+$primary-color: var(--clr-dark);
 $secondary-color: var(--clr-accent);
 $secondary-color-dark: var(--clr-accent-dark);
 $navbar-height: 70px;
