@@ -50,4 +50,9 @@ export class AboutMeComponent implements OnInit, AfterViewInit {
   }
   /* closeAudioPlayer() defined in audio-player.component.ts */
 
+  openResume() {
+    // open resume in new tab
+    window.open('assets/Harrison_Hutton_Resume_02_15_23.pdf', '_blank');
+  }
+
 }
