@@ -19,16 +19,7 @@ $breakpoint-sm: 600px;
   align-items: center;
   text-align: left;
   background-color: $primary-color;
-
-  // &__img {
-  //   width: 50%;
-  //   max-width: 300px;
-  //   z-index: 2;
-  //   position: absolute;
-  //   bottom: -50px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  // }
+  
   .section__title {
       font-size: clamp(1rem, 2.5rem, 4rem) !important;
       font-weight: bold;
@@ -39,20 +30,26 @@ $breakpoint-sm: 600px;
 
       &-text {
         margin-top: 0;
+        margin-bottom: 0;
         max-width: 1100px;
-      }
 
+      }
+      
       .name {
-        // font-size: clamp(4rem, 14vw, 14rem) !important;
-        // font-weight: bold;
         color: transparent;
         background-image: linear-gradient(to right, $secondary-color, $secondary-color-dark);
         background-clip: text;
         margin: 0;
-        // letter-spacing: 0.2rem;
         filter: var(--drop-shadow);
-
+        
         animation: rotatecolor 6s linear infinite;
+        
+        &-text {
+          margin-bottom: 2rem;
+          .pronouns {
+            color: var(--clr-dark-variant);
+          }
+        }
       }
   }
 
