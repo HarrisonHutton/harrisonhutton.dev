@@ -38,6 +38,10 @@
 
 .logo {
     max-width: 50px;
+
+    @media (min-width: 800px) {
+        margin-left: .5rem;
+    }
 }
 
 .nav {

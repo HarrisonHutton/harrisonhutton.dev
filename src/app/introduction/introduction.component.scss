@@ -20,43 +20,39 @@ $breakpoint-sm: 600px;
   text-align: left;
   background-color: $primary-color;
 
-  &__img {
-    width: 50%;
-    max-width: 300px;
-    z-index: 2;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  // &__img {
+  //   width: 50%;
+  //   max-width: 300px;
+  //   z-index: 2;
+  //   position: absolute;
+  //   bottom: -50px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
   .section__title {
       font-size: clamp(1rem, 2.5rem, 4rem) !important;
       font-weight: bold;
       margin: 0;
       letter-spacing: 0.1rem;
-      // text-transform: uppercase;
       color: var(--clr-light);
+      position: relative;
+
+      &-text {
+        margin-top: 0;
+        max-width: 1100px;
+      }
 
       .name {
-        font-size: clamp(4rem, 14vw, 14rem) !important;
-        font-weight: bold;
+        // font-size: clamp(4rem, 14vw, 14rem) !important;
+        // font-weight: bold;
         color: transparent;
         background-image: linear-gradient(to right, $secondary-color, $secondary-color-dark);
         background-clip: text;
         margin: 0;
-        letter-spacing: 0.1rem;
+        // letter-spacing: 0.2rem;
         filter: var(--drop-shadow);
 
         animation: rotatecolor 6s linear infinite;
-        
-        div {
-          display: block;
-        }
-        div:first-of-type {
-          font-size: 2rem;
-          font-weight: normal;
-          margin-bottom: 1rem;
-        }
       }
   }
 
