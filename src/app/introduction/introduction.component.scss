@@ -11,7 +11,7 @@ $font-size-title: 6rem;
 $breakpoint-sm: 600px;
 
 .intro {
-  height: calc(100vh);
+  min-height: calc(100vh);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,10 @@ $breakpoint-sm: 600px;
   align-items: center;
   text-align: left;
   background-color: $primary-color;
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+  }
   
   .section__title {
       font-size: clamp(1rem, 2.5rem, 4rem) !important;
