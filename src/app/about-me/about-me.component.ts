@@ -52,7 +52,7 @@ export class AboutMeComponent implements OnInit, AfterViewInit {
 
   openResume() {
     // open resume in new tab
-    window.open('assets/Harrison_Hutton_Resume_02_27_23.pdf', '_blank');
+    window.open('assets/Harrison_Hutton_Resume_2024_01_15.pdf', '_blank');
   }
 
 }
