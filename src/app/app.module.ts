@@ -10,6 +10,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { FooterComponent } from './footer/footer.component';
 import { AudioPlayerComponent } from './audio-player/audio-player.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AudioPlayerComponent } from './audio-player/audio-player.component';
     AboutMeComponent,
     MyWorkComponent,
     FooterComponent,
-    AudioPlayerComponent
+    AudioPlayerComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
